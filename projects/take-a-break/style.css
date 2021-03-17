@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+html {
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  color: white;
+}
+
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background: linear-gradient(60deg,  #4268a2 20%,#15436f 80%,#341679 95%);
+  margin: 0; /* We set the margin: 0  to ensure that the whole document does not have the default margin value */
+  text-align: center; /* And we align all the text to the center of the page */
+}
+
+.timer-left {
+  font-weight: 100;
+  font-size: 9vw; /* Font size is equal to the viewport width */
+  color: white;
+  text-shadow: 0px 0.6vw 0 rgba(0,0,0,0.9);
+}
+
+.timer {
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  min-height: 85vh;
+  flex-direction: column;
+}
+
+.timer-controls {
+  display: flex;
+}
+
+.timer-controls > * {
+  font-family: 'Share Tech Mono', monospace;
+  flex: auto;
+}
+.take-a-break{
+  font-family: 'Share Tech Mono', monospace;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 1px solid white;
+  cursor:pointer;
+  color: white;
+  overflow: hidden;
+  font-size: 3vw;
+  margin: 10px auto 5px;
+}
+
+.timer-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+  padding: 1rem;
+}
+
+.timer-button:hover,
+.timer-button:focus {
+  background: rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.timer-ends {
+  font-size: 4vw; /* Font size is equal to the viewport width */
+  color: white;
+  text-shadow: 0px 0.3vw 0 rgba(0,0,0,0.9);
+}
+
+
+.stop-timer{
+  border: 2px dashed white;
+  padding: 5px;
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  width: fit-content;
+  display: none;
+  margin: 20px auto;
+}
+
+.stop-timer:hover{
+  background-color: crimson;
+  cursor: pointer;
+}
+
+footer{
+  color: white;
+  font-size: 2vw;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+  border: 1px dotted white;
+  padding: 0.3vw;
+}
+
+footer a:hover{
+  border-color: #341679;
+  color: #341679
+}
+
+.custom-form{
+  margin: 10px auto;
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2vw;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.custom-form input[type="number"]{
+  width: 10vw;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.form-time{
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .timer-left {
+    font-size: 18vw;
+  }
+  .timer-ends{
+    font-size: 8vw;
+  }
+  .stop-timer{
+    font-size: 10vw;
+  }
+  footer{
+    font-size: 3vw;
+  }
+}
